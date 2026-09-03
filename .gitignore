@@ -1,0 +1,65 @@
+# ==============================================================================
+# DR-EarlyXAI .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large Model Checkpoints & Pretrained Weights (>100MB)
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.h5
+*.zip
+*.tar.gz
+*.rar
+checkpoint-best.pth
+checkpoint-best/
+
+# Raw Datasets & Image Dumps (APTOS Images)
+test_images/
+train_images/
+
+# Generated Outputs (ignore generated predictions, reports, and CAM heatmaps)
+outputs/predictions/*.csv
+outputs/quality/*.csv
+outputs/preprocessed/*.png
+outputs/preprocessed/*.jpg
+outputs/gradcam/*.png
+outputs/metrics/*.png
+outputs/error_analysis/*.png
+outputs/error_analysis/*.csv
+
+# Keep directory structure
+!outputs/**/.gitkeep
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.log
+
